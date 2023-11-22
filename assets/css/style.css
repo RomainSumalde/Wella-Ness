@@ -101,9 +101,9 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Book a table button Menu
+# Reserve button Menu
 --------------------------------------------------------------*/
-.book-a-table-btn {
+.reserve-btn {
   background: #434343;
   color: #F8F8F8;
   border-radius: 50px;
@@ -117,13 +117,13 @@ h6 {
   white-space: nowrap;
 }
 
-.book-a-table-btn:hover {
+.reserve-btn:hover {
   background: #F5F5DC;
   color: #434343;
 }
 
 @media (max-width: 992px) {
-  .book-a-table-btn {
+  .reserve-btn {
     margin: 0 15px 0 0;
     padding: 8px 20px;
     letter-spacing: 1px;
@@ -787,31 +787,31 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Whu Us
+# Services
 --------------------------------------------------------------*/
-.why-us .section-title {
+.services .section-title {
   margin-bottom: 30px;
 }
-.why-us .section-title span{
+.services .section-title span{
   font-family: 'Playfair Display', serif;
   font-weight: 800;
   color: #434343;
 }
-.why-us .box {
+.services .box {
   padding: 30px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
   transition: all ease-in-out 0.3s;
   height: 100%;
 }
 
-.why-us .box span {
+.services .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
   color: #ffcf88;
 }
 
-.why-us .box h4 {
+.services .box h4 {
   font-family: 'Playfair Display', serif;
   font-size: 24px;
   font-weight: 600;
@@ -820,31 +820,30 @@ section {
   color: #F7C873;
 }
 
-.why-us .box p {
+.services .box p {
   font-family: 'Bitter', serif;
   color: #F7C873;
   font-size: 15px;
   font-weight: 600;
   margin: 0;
   padding: 0;
+  padding-bottom: 30px;
 }
 
-.why-us .box:hover {
+.services .box:hover {
   background: #434343;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
-.why-us .box:hover span,
-.why-us .box:hover h4,
-.why-us .box:hover p {
+.services .box:hover span,
+.services .box:hover h4,
+.services .box:hover p {
   color: #FAEBCD;
 }
 
 .price-btn {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
   background: #F7C873;
   color: #F8F8F8;
   border-radius: 50px;
@@ -857,18 +856,56 @@ section {
   white-space: nowrap;
 }
 
+
 .price-btn:hover {
   background: #F5F5DC;
   color: #434343;
 }
 
 @media (max-width: 992px) {
+
+.services .box {
+  padding: 50px;
+  height: 100%;
+}
+
+.services .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffcf88;
+}
   .price-btn {
-    margin: 0 15px 0 0;
-    padding: 8px 20px;
+    margin: 15px;
+    padding: 8px 10px;
     letter-spacing: 1px;
   }
 }
+
+/*--------------------------------------------------------------
+# Video Section
+--------------------------------------------------------------*/
+.playvideo .container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/movie.mp4") center center;
+  background-size: cover;
+  padding: 0px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.playvideo .play-btn {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  background: radial-gradient(var(--color-primary) 50%, rgba(255, 255, 255, 0.4) 52%);
+  border-radius: 0%;
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 /*--------------------------------------------------------------
 # Specials
@@ -938,68 +975,44 @@ section {
   font-family: 'Bitter', serif;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 414px) {
   .specials .container{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 50%;
-    height: 50%;
-  }
-  .specials .nav-link {
-    border: 0;
-    padding: 15px;
-  }
-
-  .specials .nav-link.active {
-    color: #fff;
-    background: #ffb03b;
+    width: 10px;
+    height: 10px;
   }
 }
 
 @media (max-width: 1024px) {
   .specials .container{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 50%;
-    height: 50%;
-  }
-  .specials .nav-link {
-    border: 0;
-    padding: 15px;
-  }
-
-  .specials .nav-link.active {
-    color: #fff;
-    background: #ffb03b;
+    width: 10px;
+    height: 10px;
   }
 }
 /*--------------------------------------------------------------
-# Book A Table
+# Reserve a slot
 --------------------------------------------------------------*/
-.book-a-table h2 {
+.reserve h2 {
   font-family: 'Playfair Display', sans-serif;
 }
 
-.book-a-table p {
+.reserve p {
   font-family: 'Bitter', sans-serif;
   font-size: 16px;
   padding-bottom: 15px;
 }
 
-.book-a-table .php-email-form {
+.reserve .php-email-form {
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   padding: 30px;
   background: #fff;
 }
 
-.book-a-table .php-email-form .form-group {
+.reserve .php-email-form .form-group {
   padding-bottom: 8px;
 }
 
-.book-a-table .php-email-form .validate {
+.reserve .php-email-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -1007,7 +1020,7 @@ section {
   font-size: 13px;
 }
 
-.book-a-table .php-email-form .error-message {
+.reserve .php-email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1016,11 +1029,11 @@ section {
   font-weight: 600;
 }
 
-.book-a-table .php-email-form .error-message br+br {
+.reserve .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
-.book-a-table .php-email-form .sent-message {
+.reserve .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1029,14 +1042,14 @@ section {
   font-weight: 600;
 }
 
-.book-a-table .php-email-form .loading {
+.reserve .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.book-a-table .php-email-form .loading:before {
+.reserve .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1048,22 +1061,22 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.book-a-table .php-email-form input,
-.book-a-table .php-email-form textarea {
+.reserve .php-email-form input,
+.reserve .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.book-a-table .php-email-form input {
+.reserve .php-email-form input {
   height: 44px;
 }
 
-.book-a-table .php-email-form textarea {
+.reserve .php-email-form textarea {
   padding: 10px 12px;
 }
 
-.book-a-table .php-email-form button[type=submit] {
+.reserve .php-email-form button[type=submit] {
   background: #ffc56e;
   border: 0;
   padding: 10px 24px;
@@ -1073,7 +1086,7 @@ section {
   font-family: 'Playfair Display', sans-serif;
 }
 
-.book-a-table .php-email-form button[type=submit]:hover {
+.reserve .php-email-form button[type=submit]:hover {
   background: #F7C873;
 }
 
