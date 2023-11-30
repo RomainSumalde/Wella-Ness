@@ -882,6 +882,154 @@ section {
   }
 }
 
+.containers {
+  display: flex;
+}
+
+.left-side {
+  width: 35%;
+  height: auto;
+  background: url('/assets/img/services/facial.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.left-sidepic2 {
+  width: 35%;
+  height: auto;
+  background: url('/assets/img/services/nails.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.right-side {
+  width: 65%;
+  padding: 50px 150px; /* Adjust the overall padding as needed */
+  background-color: #ffcf88; /* or any other color you prefer */
+  height: 850px;
+}
+
+.right-side h2 {
+  font-family: 'Playfair Display', serif;
+  color: #35322d;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.right-side h1 {
+  font-family: 'Playfair Display', serif;
+  color: #35322d;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.price-list {
+  list-style-type: none;
+  padding: 15px;
+  margin: 10px;
+}
+
+.price-item {
+  margin-bottom: 10px;
+  padding-left: 10px; /* Add left padding to the text */
+  padding-top: 5px; /* Add top padding to the text */
+  padding-bottom: 5px; /* Add bottom padding to the text */
+  font-family: 'Bitter', serif;
+  color: #35322d;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.price-item span {
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+/*--------------------------------------------------------------
+# right side pic
+--------------------------------------------------------------*/
+
+.left-side2 {
+  width: 65%;
+  padding: 50px 150px; /* Adjust the overall padding as needed */
+  background-color: #ffffff; /* or any other color you prefer */
+  height: 850px;
+}
+
+.left-side2 h2 {
+  font-family: 'Playfair Display', serif;
+  color: #35322d;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.left-side2 h1 {
+  font-family: 'Playfair Display', serif;
+  color: #35322d;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.price-list2 {
+  list-style-type: none;
+  padding: 15px;
+  margin: 10px;
+}
+
+.price-item2 {
+  margin-bottom: 10px;
+  padding-left: 10px; /* Add left padding to the text */
+  padding-top: 5px; /* Add top padding to the text */
+  padding-bottom: 5px; /* Add bottom padding to the text */
+  font-family: 'Bitter', serif;
+  color: #35322d;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.price-item2 span {
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+.right-side2 {
+  width: 35%;
+  height: auto;
+  background: url('/assets/img/services/massage.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.right-sidepic2 {
+  width: 35%;
+  height: auto;
+  background: url('/assets/img/services/spa.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .containers {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%; /* Take up full width on smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .left-side {
+    display: none; /* Hide the picture on smaller screens */
+  }
+
+  .left-side2,
+  .right-side2 {
+    width: 100%; /* Take up full width on smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .right-side2 {
+    display: none; /* Hide the picture on smaller screens */
+  }
+}
+
 /*--------------------------------------------------------------
 # Video Section
 --------------------------------------------------------------*/
@@ -1381,7 +1529,7 @@ section {
   color: #fff;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 #footer h3 {
